@@ -33,7 +33,7 @@ init()
 
 # conf
 conf = configparser.ConfigParser()
-conf.read(r"E:\projects\12306-tools\conf.ini", encoding="utf-8-sig")
+conf.read(r"E:\projects\12306-tools\\12306-tools\conf.ini", encoding="utf-8-sig")
 tryTime = conf.getint('Search_time', 'tryTime')
 maxTryTime = conf.getint('Search_time', 'maxTryTime')
 queryUrl = conf.get('Url', 'tickets_query_url')

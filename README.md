@@ -50,5 +50,5 @@ setup.py为脚本，能够是tickets在任何目录运行
 tickets.py为主函数文件，目前实现的是一共进行5次尝试，若都不成功，则给出一些可能的错误提示，可以参见之前的截图  
 
 # 注意事项  
-conf.ini里写了tickets_query_url，原因是其会改变，应当注意(这个原因在失败查询给出的提示中并没给出)    
-至于如何改变，变成什么样，可以参见之前提供的参考文章    
+1. conf.ini里写了tickets_query_url，原因是其会改变，应当注意(这个原因在失败查询给出的提示中并没给出)，至于如何改变，变成什么样，可以参见之前提供的参考文章  
+2. 注意将tickets.py第36行代码conf.read(r"E:\projects\12306-tools\\12306-tools\conf.ini", encoding="utf-8-sig")的conf.ini路径改成你的绝对路径，否则会报错(注意r必须保留)    
